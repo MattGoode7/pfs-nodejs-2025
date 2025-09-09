@@ -1,0 +1,11 @@
+# Por defecto (c=3, f=./db.json)
+node cli.js
+
+# Con cantidad personalizada
+node cli.js -c 8
+
+# Con ruta de archivo personalizada
+node cli.js -f ./data/usuarios.json
+
+# Ambos
+node cli.js -c 5 -f ./data/usuarios.json

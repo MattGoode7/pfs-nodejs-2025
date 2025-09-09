@@ -1,0 +1,19 @@
+{
+  "host": "0.0.0.0",
+  "port": 7070,
+  "auth": {
+    "required": true
+  },
+  "security": {
+    "remoteIpWhitelist": ["::1", "127.0.0.1"],
+    "oscmdWhitelist": ["uptime", "whoami", "df", "free", "ls", "uname", "id"]
+  },
+  "limits": {
+    "watch": { "defaultSeconds": 60, "maxSeconds": 3600 },
+    "sampler": { "intervalSeconds": 30, "windowSeconds": 3600 }
+  },
+  "storage": {
+    "dbDir": "./data" 
+  }
+}
+
